@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# Weather Forecast Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Weather Forecast Application is a single-page web app that allows users to view current weather details and a 5-day weather forecast for any city. The app uses the OpenWeatherMap API to fetch real-time weather data, providing an intuitive and responsive user interface built with ReactJS, HTML, CSS, and JavaScript.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Current Weather Information:** 
+  - Enter a city name to view the current weather, including:
+    - Current temperature
+    - Minimum and maximum temperatures
+    - Humidity
+    - Wind speed and direction
+    - Weather description (e.g., clear sky, light rain)
+    - A weather icon reflecting the current conditions
+  
+- **5-Day Weather Forecast:**
+  - View a 5-day weather forecast for the selected city, displaying:
+    - Date
+    - Average temperature
+    - Weather description
+    - Corresponding weather icon
 
-### `npm start`
+- **Temperature Unit Toggle:**
+  - Switch between Celsius and Fahrenheit units for all temperature readings.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Design:**
+  - The application is fully responsive and optimized for both desktop and mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Error Handling:**
+  - Clear and informative error messages are displayed when users enter an invalid city name or encounter other issues.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **ReactJS:** For building the user interface and managing the application state.
+- **HTML5:** For structuring the content of the application.
+- **CSS3:** For styling the application and ensuring a responsive design.
+- **JavaScript (ES6+):** For implementing application logic and handling API interactions.
+- **OpenWeatherMap API:** For fetching current weather data and 5-day forecasts.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run this project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (v14 or later)
+- npm (v6 or later) or yarn
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone this repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/somkantsharma39/WeatherForecastDashboard.git
+   cd WeatherForecastDashboard
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-## Learn More
+3. Create a `.env` file in the root directory and add your OpenWeatherMap API key:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```plaintext
+   REACT_APP_WEATHER_API_KEY=your_api_key_here
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start the development server:
 
-### Code Splitting
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Enter the name of a city in the search bar to view the current weather and 5-day forecast.
+- Use the toggle switch to change temperature units between Celsius and Fahrenheit.
+- View weather icons and descriptions that accurately reflect the current and forecasted conditions.
 
-### Making a Progressive Web App
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```plaintext
+FullstackInternTask/
+│
+├── public/
+│   ├── index.html
+│   └── ...
+│
+├── src/
+│   ├── components/
+│   │   ├── CurrentWeather.js
+│   │   ├── Forecast.js
+│   │   ├── Header.js
+│   │   └── ...
+│   ├── utils/
+│   │   ├── api.js
+│   │   ├── helpers.js
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+│
+├── .env
+├── package.json
+├── README.md
+└── ...
+```
 
-### Advanced Configuration
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is deployed on Vercel. You can view the live version here: [Vercel Link](https://weather-forecast-dashboard-zeta.vercel.app/)
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request with your changes. Contributions are always welcome!
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+
+- [OpenWeatherMap API](https://openweathermap.org/api) for providing the weather data.
+- [ReactJS](https://reactjs.org/) for the powerful front-end library.
+
+---
+
+Thank you for using the Weather Forecast Application! If you have any questions or feedback, please feel free to reach out.
