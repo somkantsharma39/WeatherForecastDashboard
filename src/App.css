@@ -1,0 +1,145 @@
+/* Styling on entire content area of webpage */
+body {
+  margin: 0px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling for Input Box */
+input {
+  width: 35%;
+  border: none;
+  padding: 12px;
+  font-size: 20px;
+  margin-top: 30px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px 2px #7c7e7f;
+}
+
+/* Styling on Input focus  */
+input:focus {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling on the search and toggle button  */
+button {
+  border: none;
+  margin: 10px;
+  padding: 12px;
+  font-size: 17px;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 50px;
+  background-color: #24486e;
+  box-shadow: 2px 2px 2px 2px #7c7e7f;
+}
+
+/* Styling on hovering the button */
+button:hover {
+  transform: scale(1.04);
+  background-color: #365d86;
+}
+
+/* Main content area like current weather and display error message if any  */
+.main-content {
+  background-color: rgb(28 70 88);
+  height: 100%;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+/* Styling on the current weather's div */
+.current-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Styling on the current weather */
+.current-weather-details {
+  background-color: rgb(2, 30, 36);
+  width: 450px;
+  line-height: 20px;
+  height: 410px;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #7c7e7f;
+}
+
+/* Current Weather Hover */
+.current-weather-details:hover {
+  background-color: rgba(2, 30, 36, 0.8); 
+}
+
+/* Styling on five days forecast heading */
+.five-days {
+  margin: 10px;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: start;
+  line-height: 18px;
+  padding-left: 10px;
+  text-transform: lowercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Current & Forecast styling */
+.weather-details p,
+.forecast-day p {
+  margin: 5px 0;
+}
+
+/* Weather Icons */
+.icon {
+  font-size: 70px;
+  color: #ffffff;
+}
+
+/* Styling on forecast container */
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling on forecast div */
+.forecast-day {
+  border-radius: 10px;
+  margin: 5px;
+  width: 250px;
+  padding: 10px;
+  height: 250px;
+  font-size: 20px;
+  line-height: 35px;
+  box-shadow: 2px 2px 2px 2px #7c7e7f;
+  background-color: rgb(14 33 53 / 87%);
+}
+
+/* Styling on forecast div when hover*/
+.forecast-day:hover {
+  background-color: rgb(5 6 42 / 62%);
+}
+
+
+/* Styles for make website responsive specific to mobile devices */
+@media only screen and (max-width: 490px) {
+  .forecast {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-content {
+    height: 100% !important;
+    background-color: rgb(28 70 88) !important;
+  }
+}
+
+/* Error handling */
+.error {
+  font-size: 50px;
+  padding-bottom: 50px;
+}
