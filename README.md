@@ -88,7 +88,7 @@ To run this project locally, follow these steps:
 ## Project Structure
 
 ```plaintext
-FullstackInternTask/
+WeatherForecastDashboard/
 │
 ├── public/
 │   ├── index.html
