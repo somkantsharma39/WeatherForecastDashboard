@@ -1,4 +1,4 @@
-# Weather Forecast Application
+# Weather Forecast Dashboard
 
 This Weather Forecast Application is a single-page web app that allows users to view current weather details and a 5-day weather forecast for any city. The app uses the OpenWeatherMap API to fetch real-time weather data, providing an intuitive and responsive user interface built with ReactJS, HTML, CSS, and JavaScript.
 
